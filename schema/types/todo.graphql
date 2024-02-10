@@ -1,0 +1,18 @@
+type Todo {
+  id: Int!
+  name: String!
+
+  isComplete: Boolean!
+  isDeleted: Boolean!
+
+  createdAt: Time!
+  updatedAt: Time!
+
+  createdBy: User!
+  updatedBy: User!
+}
+
+input TodoInput {
+  name: String!
+  createdBy: Int!
+}
