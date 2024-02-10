@@ -1,0 +1,4 @@
+extend type Query {
+  todo(id: Int!): Todo
+  todos(limit: Int, offset: Int): [Todo!]!
+}

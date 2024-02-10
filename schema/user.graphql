@@ -1,0 +1,4 @@
+extend type Query {
+  user(id: Int!): User
+  users(limit: Int, offset: Int): [User!]!
+}
